@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日赚钱机会 | 2026年4月2日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: #f5f6fa;
+    color: #1a1a2e;
+    line-height: 1.6;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 16px; }
+
+  /* 头部 */
+  .header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 24px 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .header h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  .header .date { opacity: 0.9; font-size: 14px; }
+
+  /* Tab切换 */
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .tab {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    transition: all 0.3s;
+  }
+  .tab.active { background: #667eea; color: white; }
+  .tab:not(.active) { background: white; color: #666; }
+
+  /* 方向卡片 */
+  .direction-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .direction-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .direction-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .direction-title { font-size: 18px; font-weight: 600; }
+  .direction-subtitle { font-size: 13px; color: #888; margin-top: 2px; }
+
+  /* 方向总结 */
+  .summary-box {
+    background: #f8f9fc;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .summary-box h4 {
+    font-size: 14px;
+    color: #667eea;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .summary-box p { font-size: 14px; color: #444; }
+
+  /* 赚钱机会 */
+  .opportunity {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .opportunity:last-child { margin-bottom: 0; }
+  .opportunity h5 {
+    font-size: 16px;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+  .opportunity .tags { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+  .tag {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .tag-money { background: #e8f5e9; color: #2e7d32; }
+  .tag-action { background: #e3f2fd; color: #1565c0; }
+  .tag-risk { background: #fff3e0; color: #e65100; }
+
+  /* 赚钱三要素 */
+  .profit-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .profit-item {
+    background: #f8f9fc;
+    border-radius: 8px;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .profit-item .label { font-size: 11px; color: #888; margin-bottom: 2px; }
+  .profit-item .value { font-size: 13px; font-weight: 600; color: #333; }
+
+  .action-box {
+    background: #667eea;
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 12px;
+  }
+  .action-box h6 { font-size: 13px; margin-bottom: 6px; }
+  .action-box ol { font-size: 13px; padding-left: 18px; }
+  .action-box li { margin-bottom: 3px; }
+
+  .news-list { margin-top: 12px; }
+  .news-item {
+    padding: 10px 0;
+    border-top: 1px solid #f0f0f0;
+    font-size: 13px;
+  }
+  .news-item:first-child { border-top: none; padding-top: 0; }
+  .news-item .source { color: #888; font-size: 12px; }
+  .news-item a { color: #667eea; text-decoration: none; }
+
+  /* 隐藏类 */
+  .hidden { display: none; }
+
+  /* 底部 */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="header">
+    <h1>📰 每日赚钱机会报告</h1>
+    <div class="date">2026年4月2日 · 21:00 更新</div>
+  </div>
+
+  <!-- Tab -->
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('all')">全部机会</button>
+    <button class="tab" onclick="showTab('outbound')">🚢 出海</button>
+    <button class="tab" onclick="showTab('ai')">🤖 AI</button>
+    <button class="tab" onclick="showTab('stock')">📈 股市</button>
+  </div>
+
+  <!-- ==================== 出海方向 ==================== -->
+  <div class="direction-card" data-category="outbound">
+    <div class="direction-header">
+      <div class="direction-icon" style="background: #e8f5e9;">🚢</div>
+      <div>
+        <div class="direction-title">出海搞钱 · 跨境电商红利期</div>
+        <div class="direction-subtitle">政策加码 · 规范发展 · 品牌出海</div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <h4>💡 方向核心逻辑</h4>
+      <p>跨境电商从"卖货"升级到"品牌出海"。4月起海关总署全国推广9610跨关区退货，与退运免税政策形成组合拳，降低退货成本。欧洲EPR强制合规、美国免税取消短期承压，但长期利好规范化运营的卖家。</p>
+    </div>
+
+    <!-- 机会1 -->
+    <div class="opportunity">
+      <h5>机会1: 独立站 + 私域沉淀（月赚2-5万）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 利润空间 30-50%</span>
+        <span class="tag tag-action">⚡ 上手难度 低</span>
+        <span class="tag tag-risk">⏰ 投资周期 1-3月</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">5000-2万</div></div>
+        <div class="profit-item"><div class="label">月收入</div><div class="value">2-5万</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">上班族兼职</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>用Shopify或飞书微店快速搭建独立站（5分钟搞定）</li>
+          <li>在亚马逊/Temu开店铺货，用平台红利期积累资金</li>
+          <li>包裹内放引流卡，将平台客户导入独立站</li>
+          <li>通过邮件营销、会员体系做复购，月复购率提升至30%+</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 深圳已有130个品牌独立站年销超2500万，商务部列为优秀案例</div>
+        <div class="news-item">📌 2026跨境独立站8大趋势：多渠道整合、精细化运营成关键</div>
+      </div>
+    </div>
+
+    <!-- 机会2 -->
+    <div class="opportunity">
+      <h5>机会2: EPR合规服务（单笔服务费5000-3万）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 利润空间 高（服务溢价）</span>
+        <span class="tag tag-action">⚡ 上手难度 中</span>
+        <span class="tag tag-risk">⏰ 政策红利期 1-2年</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">1-3万</div></div>
+        <div class="profit-item"><div class="label">月收入</div><div class="value">3-10万</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">有跨境经验</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>注册成为EPR授权代理（德国WEEE、包装法、法国EPR等）</li>
+          <li>在1688、跨境卖家群定向推广，找到目标客户</li>
+          <li>帮助卖家注册、申报、缴费，每单服务费5000-30000元</li>
+          <li>建立长期客户关系，年费续费+衍生业务</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 4月起欧洲EPR强制合规，未达标商品将被下架</div>
+        <div class="news-item">📌 亚马逊要求卖家2026年必须提交EPR注册号</div>
+      </div>
+    </div>
+
+    <!-- 机会3 -->
+    <div class="opportunity">
+      <h5>机会3: 跨境选品工具/服务（工具订阅+代运营）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 利润空间 软件+服务</span>
+        <span class="tag tag-action">⚡ 上手难度 中</span>
+        <span class="tag tag-risk">⏰ 持续收益</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">5000-1万</div></div>
+        <div class="profit-item"><div class="label">月收入</div><div class="value">1-5万</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">技术+电商</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>搭建AI选品工具（抓取亚马逊/Temu热卖数据）</li>
+          <li>月订阅费299-999元，定向服务中小卖家</li>
+          <li>提供选品报告、竞品分析、定价策略等增值服务</li>
+          <li>积累100个付费用户后，月收入稳定3万+</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 跨境电商选品需求爆发：AI+数据分析成刚需</div>
+        <div class="news-item">📌 2026年选品工具市场规模预计突破50亿</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== AI方向 ==================== -->
+  <div class="direction-card" data-category="ai">
+    <div class="direction-header">
+      <div class="direction-icon" style="background: #e3f2fd;">🤖</div>
+      <div>
+        <div class="direction-title">AI副业 · 普通人月入过万的机会</div>
+        <div class="direction-subtitle">工具平权 · 效率革命 · 多元变现</div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <h4>💡 方向核心逻辑</h4>
+      <p>AI工具让普通人也能做以前需要专业技能的活。写文案、做设计、剪视频、搞翻译——以前外包给专业团队的活，现在用AI工具+自己1小时就能搞定，然后低价走量接单变现。</p>
+    </div>
+
+    <!-- 机会1 -->
+    <div class="opportunity">
+      <h5>机会1: AI文案撰写（新手日赚100-300元）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 单篇30-200元</span>
+        <span class="tag tag-action">⚡ 上手难度 ★☆☆☆☆</span>
+        <span class="tag tag-risk">⏰ 当天见效</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">0元</div></div>
+        <div class="profit-item"><div class="label">日收入</div><div class="value">100-300元</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">会打字就行</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>注册DeepSeek/豆包/ChatGPT（国内可直接用）</li>
+          <li>在闲鱼/淘宝/小红书发布"AI代写服务"</li>
+          <li>接单后用AI生成初稿，人工修改30%内容</li>
+          <li>单篇报价30-200元，每天接3-5单，月入3000-8000元</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 自媒体创作者需求旺盛：小红书文案、公众号文章、短视频脚本</div>
+        <div class="news-item">📌 AI写作工具日活突破千万，内容需求持续爆发</div>
+      </div>
+    </div>
+
+    <!-- 机会2 -->
+    <div class="opportunity">
+      <h5>机会2: AI短视频剪辑（单条50-500元）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 单条50-500元</span>
+        <span class="tag tag-action">⚡ 上手难度 ★★☆☆☆</span>
+        <span class="tag tag-risk">⏰ 1-2周见效</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">0元（剪映免费）</div></div>
+        <div class="profit-item"><div class="label">月收入</div><div class="value">3000-1万</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">有剪辑兴趣</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>下载剪映（免费），学习AI自动剪辑功能</li>
+          <li>在猪八戒/闲鱼/抖音发布"AI视频剪辑"服务</li>
+          <li>商家提供商品素材，你用AI自动剪辑+加字幕+配音</li>
+          <li>单条视频50-500元，代运营月3000-8000元</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 抖音/快手/视频号大力补贴创作者，AI剪辑需求井喷</div>
+        <div class="news-item">📌 商家无人直播兴起：AI数字人+AI脚本成为标配</div>
+      </div>
+    </div>
+
+    <!-- 机会3 -->
+    <div class="opportunity">
+      <h5>机会3: AI知识付费素材包（被动收入）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 单套29-99元</span>
+        <span class="tag tag-action">⚡ 上手难度 ★★★☆☆</span>
+        <span class="tag tag-risk">⏰ 积累期1-3月</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">0元</div></div>
+        <div class="profit-item"><div class="label">月收入</div><div class="value">3000-1万+</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">有整理能力</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>整理AI工具教程、提示词模板、变现攻略等素材</li>
+          <li>在闲鱼/小红书/知识星球上架，定价比同行低</li>
+          <li>建立素材更新群，年费199-399元，持续更新</li>
+          <li>积累500个付费用户后，月被动收入2万+</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 AI教程类素材包在闲鱼热销，爆款月销1000+份</div>
+        <div class="news-item">📌 知识星球AI相关星球疯狂涨粉，变现效率极高</div>
+      </div>
+    </div>
+
+    <!-- 机会4 -->
+    <div class="opportunity">
+      <h5>机会4: AI电商辅助服务（单店月服务300-1000元）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 单店月300-1000元</span>
+        <span class="tag tag-action">⚡ 上手难度 ★★☆☆☆</span>
+        <span class="tag tag-risk">⏰ 长期稳定</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">启动资金</div><div class="value">0元</div></div>
+        <div class="profit-item"><div class="label">月收入</div><div class="value">5000-2万</div></div>
+        <div class="profit-item"><div class="label">适合人群</div><div class="value">电商从业者</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 具体操作步骤</h6>
+        <ol>
+          <li>用AI工具（阿里妈妈AI、DeepSeek）帮淘宝/抖音小店优化商品</li>
+          <li>服务内容：优化标题（SEO）、生成详情页文案、制作主图</li>
+          <li>月服务费300-1000元/店，接5-10家店稳定月入5000+</li>
+          <li>建立标准化流程后可扩大团队</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 淘宝商家对AI优化需求激增：标题、详情页、主图全覆盖</div>
+        <div class="news-item">📌 抖音小店AI运营成标配，商家付费意愿强</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 股市方向 ==================== -->
+  <div class="direction-card" data-category="stock">
+    <div class="direction-header">
+      <div class="direction-icon" style="background: #fff3e0;">📈</div>
+      <div>
+        <div class="direction-title">A股投资 · 4月结构性机会</div>
+        <div class="direction-subtitle">震荡修复 · 政策催化 · 业绩验证</div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <h4>💡 方向核心逻辑</h4>
+      <p>A股3月受外部冲击回调，沪指失守4000点。4月进入"业绩验证期"，资金从概念炒作转向业绩兑现。AI产业链、跨境电商、新能源等主线明确，券商金股组合近130只标的。</p>
+    </div>
+
+    <!-- 机会1 -->
+    <div class="opportunity">
+      <h5>机会1: AI产业链（算力+应用）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 板块趋势 向上</span>
+        <span class="tag tag-action">⚡ 逻辑 业绩验证</span>
+        <span class="tag tag-risk">⚠️ 注意波动</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">代表个股</div><div class="value">海光/寒武纪/科大讯飞</div></div>
+        <div class="profit-item"><div class="label">机构观点</div><div class="value">AI仍是主线</div></div>
+        <div class="profit-item"><div class="label">风险</div><div class="value">短期波动大</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 操作策略</h6>
+        <ol>
+          <li>关注一季报业绩超预期的AI个股（算力芯片、应用端）</li>
+          <li>分批建仓，控制仓位在30%以内</li>
+          <li>设止损线-15%，不追高</li>
+          <li>重点关注：国产算力替代、大模型应用落地</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 中国大模型周调用量7.359万亿Token，连续3周超美国</div>
+        <div class="news-item">📌 AI智能体从概念走向落地，应用端业绩开始兑现</div>
+      </div>
+    </div>
+
+    <!-- 机会2 -->
+    <div class="opportunity">
+      <h5>机会2: 跨境电商板块（政策+业绩双击）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 政策催化</span>
+        <span class="tag tag-action">⚡ 逻辑 关税缓和</span>
+        <span class="tag tag-risk">⚠️ 外部扰动</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">代表板块</div><div class="value">物流/平台/品牌</div></div>
+        <div class="profit-item"><div class="label">催化剂</div><div class="value">9610全国推广</div></div>
+        <div class="profit-item"><div class="label">风险</div><div class="value">关税反复</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 操作策略</h6>
+        <ol>
+          <li>关税预期缓和时布局，受益顺序：物流→平台→品牌</li>
+          <li>重点关注：海外仓布局完善的物流企业</li>
+          <li>避开纯"卖货"型公司，选择有品牌护城河的</li>
+          <li>仓位建议20%，止损-10%</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 9610跨关区退货全国推广，跨境电商成本大降</div>
+        <div class="news-item">📌 4月外贸新政密集落地，通关效率持续提升</div>
+      </div>
+    </div>
+
+    <!-- 机会3 -->
+    <div class="opportunity">
+      <h5>机会3: 黄金避险（短期回调后机会）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 避险属性</span>
+        <span class="tag tag-action">⚡ 逻辑 全球不确定性</span>
+        <span class="tag tag-risk">⚠️ 短期超买</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">当前价格</div><div class="value">回调中</div></div>
+        <div class="profit-item"><div class="label">机构观点</div><div class="value">回调后配置</div></div>
+        <div class="profit-item"><div class="label">配置比例</div><div class="value">5-10%</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 操作策略</h6>
+        <ol>
+          <li>等回调企稳后分批配置，不追涨</li>
+          <li>买黄金ETF（518880）或纸黄金，操作灵活</li>
+          <li>全球关税政策不确定+地缘风险+美元走弱=黄金中期支撑</li>
+          <li>配置比例5-10%作为资产保险</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 特朗普关税政策冲击全球市场，黄金短期回调</div>
+        <div class="news-item">📌 全球央行持续购金，支撑黄金长期趋势</div>
+      </div>
+    </div>
+
+    <!-- 机会4 -->
+    <div class="opportunity">
+      <h5>机会4: 新能源（政策+技术双轮驱动）</h5>
+      <div class="tags">
+        <span class="tag tag-money">💰 估值修复</span>
+        <span class="tag tag-action">⚡ 逻辑 政策加码</span>
+        <span class="tag tag-risk">⚠️ 竞争加剧</span>
+      </div>
+      <div class="profit-3">
+        <div class="profit-item"><div class="label">代表板块</div><div class="value">锂电/光伏/储能</div></div>
+        <div class="profit-item"><div class="label">催化剂</div><div class="value">以旧换新</div></div>
+        <div class="profit-item"><div class="label">风险</div><div class="value">产能过剩</div></div>
+      </div>
+      <div class="action-box">
+        <h6>🚀 操作策略</h6>
+        <ol>
+          <li>选择有技术壁垒的龙头，如储能、温控环节</li>
+          <li>避开纯产能型公司，关注有定价权的细分龙头</li>
+          <li>政策利好密集时（以旧换新）关注，事件驱动操作</li>
+          <li>仓位建议15%，不重仓</li>
+        </ol>
+      </div>
+      <div class="news-list">
+        <div class="news-item">📌 新能源汽车以旧换新政策加码，需求有望回暖</div>
+        <div class="news-item">📌 储能板块受益于电网改造招标放量</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部说明 -->
+  <div class="footer">
+    ⚠️ 本报告仅供参考，不构成投资建议。股市有风险，投资需谨慎。<br>
+    🔄 每日9:00 / 12:00 / 18:00 / 21:00 自动更新
+  </div>
+
+</div>
+
+<script>
+function showTab(tab) {
+  // 更新Tab状态
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // 过滤内容
+  const cards = document.querySelectorAll('.direction-card');
+  cards.forEach(card => {
+    if (tab === 'all') {
+      card.classList.remove('hidden');
+    } else {
+      const category = card.getAttribute('data-category');
+      card.classList.toggle('hidden', category !== tab);
+    }
+  });
+}
+</script>
+</body>
+</html>
